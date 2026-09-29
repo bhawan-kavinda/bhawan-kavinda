@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 162" width="900" height="162" role="img" aria-labelledby="t" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="t">Most used languages</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1115"/><stop offset="1" stop-color="#1a2233"/></linearGradient>
+  <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f74d6"/><stop offset="0.5" stop-color="#ff8a1f"/><stop offset="1" stop-color="#3DDC84"/></linearGradient>
+</defs>
+<rect width="900" height="162" rx="20" fill="url(#bg)"/>
+<text x="24" y="44" font-size="20" font-weight="700" fill="#ffffff">Most used languages</text>
+<text x="24" y="62" font-size="12.5" fill="#9fb4d9">Share of code across owned repositories, forks excluded.</text>
+<rect x="24.0" y="72" width="834.5" height="14" fill="#f1e05a" rx="7"/><rect x="858.5" y="72" width="17.5" height="14" fill="#e34c26" rx="7"/>
+<circle cx="30" cy="114" r="6" fill="#f1e05a"/>
+<text x="44" y="118" font-size="14" fill="#e6eeff">JavaScript</text>
+<text x="274" y="118" font-size="14" fill="#9fb4d9" text-anchor="end">97.9%</text><circle cx="318" cy="114" r="6" fill="#e34c26"/>
+<text x="332" y="118" font-size="14" fill="#e6eeff">HTML</text>
+<text x="562" y="118" font-size="14" fill="#9fb4d9" text-anchor="end">2.1%</text>
+</svg>

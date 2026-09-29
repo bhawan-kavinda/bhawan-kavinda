@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-labelledby="t" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="t">Bhawan Kavinda - Welcome To My Universe</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1115"/><stop offset="1" stop-color="#1a2233"/></linearGradient>
+  <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f74d6"/><stop offset="0.5" stop-color="#ff8a1f"/><stop offset="1" stop-color="#3DDC84"/></linearGradient>
+</defs>
+<style>
+  .s{animation:tw 3.2s ease-in-out infinite;opacity:.2}
+  @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+  .r{opacity:0;animation:cyc 12s infinite}
+  @keyframes cyc{0%{opacity:0;transform:translateY(8px)}3%{opacity:1;transform:translateY(0)}22.00%{opacity:1;transform:translateY(0)}25.00%{opacity:0;transform:translateY(-8px)}100%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){.r,.s{animation:none}.r{opacity:0}.r0{opacity:1}.s{opacity:.4}}
+</style>
+<rect width="900" height="260" rx="20" fill="url(#bg)"/>
+<circle class="s" cx="584" cy="144" r="1.2" fill="#e6eeff" style="animation-delay:0.00s"/><circle class="s" cx="442" cy="117" r="1.7" fill="#e6eeff" style="animation-delay:0.37s"/><circle class="s" cx="346" cy="215" r="1.8" fill="#e6eeff" style="animation-delay:0.74s"/><circle class="s" cx="538" cy="82" r="2.1" fill="#e6eeff" style="animation-delay:1.11s"/><circle class="s" cx="681" cy="35" r="1.7" fill="#e6eeff" style="animation-delay:1.48s"/><circle class="s" cx="436" cy="169" r="1.2" fill="#e6eeff" style="animation-delay:1.85s"/><circle class="s" cx="625" cy="127" r="1.2" fill="#e6eeff" style="animation-delay:2.22s"/><circle class="s" cx="329" cy="228" r="2.4" fill="#e6eeff" style="animation-delay:2.59s"/><circle class="s" cx="370" cy="118" r="2.3" fill="#e6eeff" style="animation-delay:2.96s"/><circle class="s" cx="410" cy="112" r="1.8" fill="#e6eeff" style="animation-delay:3.33s"/><circle class="s" cx="690" cy="81" r="1.2" fill="#e6eeff" style="animation-delay:3.70s"/><circle class="s" cx="872" cy="118" r="1.3" fill="#e6eeff" style="animation-delay:4.07s"/><circle class="s" cx="617" cy="92" r="1.2" fill="#e6eeff" style="animation-delay:4.44s"/><circle class="s" cx="748" cy="97" r="1.5" fill="#e6eeff" style="animation-delay:4.81s"/><circle class="s" cx="346" cy="225" r="1.3" fill="#e6eeff" style="animation-delay:5.18s"/><circle class="s" cx="813" cy="123" r="1.3" fill="#e6eeff" style="animation-delay:5.55s"/>
+<g fill="none" stroke="url(#ln)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M92 95 L52 130 L92 165"/><path d="M148 95 L188 130 L148 165"/><path d="M132 87 L108 173"/>
+</g>
+<text x="242" y="84" font-size="14" font-weight="700" letter-spacing="3" fill="#ff8a1f">WELCOME TO MY UNIVERSE</text>
+<text x="240" y="140" font-size="48" font-weight="700" fill="#ffffff">Bhawan Kavinda</text>
+<text class="r r0" x="240" y="186" font-size="22" fill="#9fb4d9" style="animation-delay:0s">Full Stack Developer</text><text class="r r1" x="240" y="186" font-size="22" fill="#9fb4d9" style="animation-delay:3s">Creative Problem Solver</text><text class="r r2" x="240" y="186" font-size="22" fill="#9fb4d9" style="animation-delay:6s">Tech &amp; Cloud Enthusiast</text><text class="r r3" x="240" y="186" font-size="22" fill="#9fb4d9" style="animation-delay:9s">Building Awesome Projects</text>
+<rect x="242" y="208" width="120" height="3" rx="1.5" fill="url(#ln)"/>
+</svg>

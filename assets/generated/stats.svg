@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 318" width="900" height="318" role="img" aria-labelledby="t" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+<title id="t">Repository and contribution statistics</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1115"/><stop offset="1" stop-color="#1a2233"/></linearGradient>
+  <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f74d6"/><stop offset="0.5" stop-color="#ff8a1f"/><stop offset="1" stop-color="#3DDC84"/></linearGradient>
+</defs>
+<rect width="900" height="318" rx="20" fill="url(#bg)"/>
+<text x="24" y="44" font-size="20" font-weight="700" fill="#ffffff">Activity</text>
+<text x="24" y="64" font-size="12.5" fill="#9fb4d9">Contributions cover the last 12 months. Private repositories are counted only.</text>
+<rect x="756" y="34" width="120" height="3" rx="1.5" fill="url(#ln)"/>
+<g>
+  <rect x="18" y="78" width="204" height="92" rx="14" fill="#151b28" stroke="#3f74d6" stroke-opacity="0.5"/>
+  <rect x="34" y="78" width="36" height="4" rx="2" fill="#3f74d6"/>
+  <text x="36" y="130" font-size="30" font-weight="700" fill="#ffffff">3</text>
+  <text x="36" y="152" font-size="13" fill="#9fb4d9">Public repositories</text>
+</g>
+<g>
+  <rect x="238" y="78" width="204" height="92" rx="14" fill="#151b28" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <rect x="254" y="78" width="36" height="4" rx="2" fill="#a78bfa"/>
+  <text x="256" y="130" font-size="30" font-weight="700" fill="#ffffff">n/a</text>
+  <text x="256" y="152" font-size="13" fill="#9fb4d9">Private repositories</text>
+</g>
+<g>
+  <rect x="458" y="78" width="204" height="92" rx="14" fill="#151b28" stroke="#facc15" stroke-opacity="0.5"/>
+  <rect x="474" y="78" width="36" height="4" rx="2" fill="#facc15"/>
+  <text x="476" y="130" font-size="30" font-weight="700" fill="#ffffff">0</text>
+  <text x="476" y="152" font-size="13" fill="#9fb4d9">Stars earned</text>
+</g>
+<g>
+  <rect x="678" y="78" width="204" height="92" rx="14" fill="#151b28" stroke="#22d3ee" stroke-opacity="0.5"/>
+  <rect x="694" y="78" width="36" height="4" rx="2" fill="#22d3ee"/>
+  <text x="696" y="130" font-size="30" font-weight="700" fill="#ffffff">0</text>
+  <text x="696" y="152" font-size="13" fill="#9fb4d9">Forks of my repos</text>
+</g>
+<g>
+  <rect x="18" y="186" width="204" height="92" rx="14" fill="#151b28" stroke="#3DDC84" stroke-opacity="0.5"/>
+  <rect x="34" y="186" width="36" height="4" rx="2" fill="#3DDC84"/>
+  <text x="36" y="238" font-size="30" font-weight="700" fill="#ffffff">234</text>
+  <text x="36" y="260" font-size="13" fill="#9fb4d9">Contributions</text>
+</g>
+<g>
+  <rect x="238" y="186" width="204" height="92" rx="14" fill="#151b28" stroke="#ff8a1f" stroke-opacity="0.5"/>
+  <rect x="254" y="186" width="36" height="4" rx="2" fill="#ff8a1f"/>
+  <text x="256" y="238" font-size="30" font-weight="700" fill="#ffffff">2</text>
+  <text x="256" y="260" font-size="13" fill="#9fb4d9">Pull requests</text>
+</g>
+<g>
+  <rect x="458" y="186" width="204" height="92" rx="14" fill="#151b28" stroke="#f472b6" stroke-opacity="0.5"/>
+  <rect x="474" y="186" width="36" height="4" rx="2" fill="#f472b6"/>
+  <text x="476" y="238" font-size="30" font-weight="700" fill="#ffffff">0</text>
+  <text x="476" y="260" font-size="13" fill="#9fb4d9">Issues opened</text>
+</g>
+<g>
+  <rect x="678" y="186" width="204" height="92" rx="14" fill="#151b28" stroke="#3DDC84" stroke-opacity="0.5"/>
+  <rect x="694" y="186" width="36" height="4" rx="2" fill="#3DDC84"/>
+  <text x="696" y="238" font-size="30" font-weight="700" fill="#ffffff">4 / 4</text>
+  <text x="696" y="260" font-size="13" fill="#9fb4d9">Current / longest streak</text>
+</g>
+<text x="24" y="302" font-size="11.5" fill="#6b7a99">Updated 2026-09-29 21:39 UTC</text>
+</svg>
