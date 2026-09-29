@@ -1,0 +1,25 @@
+{
+  "username": "bhawan-kavinda",
+  "name": "Bhawan Kavinda",
+  "headline": "Welcome To My Universe",
+  "roles": [
+    "Full Stack Developer",
+    "Creative Problem Solver",
+    "Tech & Cloud Enthusiast",
+    "Building Awesome Projects"
+  ],
+  "bio": "Solo developer from Sri Lanka building web and mobile products.",
+  "overview": [
+    "Exploring new technologies and building cool software.",
+    "Focused on scalable web apps, clean code, and modern design.",
+    "Goal: continuous learning and contributing to open source."
+  ],
+  "links": {
+    "linkedin": "",
+    "email": "",
+    "portfolio": "",
+    "spotify": ""
+  },
+  "featured": { "count": 4, "pin": [], "exclude": [] },
+  "languages": { "top": 6, "exclude": [] }
+}
