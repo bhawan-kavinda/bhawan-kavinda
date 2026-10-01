@@ -55,7 +55,7 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript</sub>
+    <sub>JavaScript &middot; 1 star</sub>
   </td>
   <td width="50%"></td>
 </tr>
@@ -63,4 +63,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-01 06:04 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-01 18:27 UTC.</sub></p>
