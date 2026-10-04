@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**8** repositories (**4** public, **4** private). Most used: JavaScript, Kotlin, HTML.
+**9** repositories (**4** public, **5** private). Most used: JavaScript, Kotlin, HTML.
 
 ---
 
@@ -67,4 +67,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-04 06:00 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-04 16:53 UTC.</sub></p>
