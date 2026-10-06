@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**9** repositories (**4** public, **5** private). Most used: JavaScript, Kotlin, HTML.
+**10** repositories (**4** public, **6** private). Most used: JavaScript, Kotlin, HTML.
 
 ---
 
@@ -55,7 +55,7 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript</sub>
+    <sub>JavaScript &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/elephant"><b>elephant</b></a><br/>
@@ -67,4 +67,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-05 05:49 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-06 06:28 UTC.</sub></p>
