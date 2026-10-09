@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**12** repositories (**5** public, **7** private). Most used: JavaScript, Kotlin, HTML.
+**13** repositories (**6** public, **7** private). Most used: JavaScript, Kotlin, HTML.
 
 ---
 
@@ -44,7 +44,7 @@ Solo developer from Sri Lanka building web and mobile products.
   <img src="assets/generated/languages.svg" alt="Top languages" width="100%">
 </p>
 
-`android` `apk` `apk-build` `battery` `battery-monitor` `capacitor` `ci-cd` `cpu-monitoring` `floating-window` `github-actions` `jetpack-compose` `kotlin`
+`android` `apk` `github-actions` `apk-build` `automation` `backup` `battery` `battery-monitor` `capacitor` `ci-cd` `cloudflare-workers` `cpu-monitoring`
 
 ---
 
@@ -58,21 +58,25 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>JavaScript &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
+    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
+    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
+    <sub>Python</sub>
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
     <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
     <sub>Kotlin</sub>
   </td>
-</tr>
-<tr>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/elephant"><b>elephant</b></a><br/>
     <sub>No description yet.</sub><br/>
     <sub>HTML</sub>
   </td>
-  <td width="50%"></td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-08 18:53 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-09 06:17 UTC.</sub></p>
