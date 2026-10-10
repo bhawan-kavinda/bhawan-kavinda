@@ -58,16 +58,16 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>JavaScript &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
-    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
-    <sub>Python</sub>
+    <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
+    <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
+    <sub>Kotlin</sub>
   </td>
 </tr>
 <tr>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
-    <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
-    <sub>Kotlin</sub>
+    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
+    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
+    <sub>Python</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/elephant"><b>elephant</b></a><br/>
@@ -79,4 +79,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-09 18:23 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-10 05:59 UTC.</sub></p>
