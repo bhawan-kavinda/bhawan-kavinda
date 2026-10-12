@@ -55,28 +55,28 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 1 star</sub>
+    <sub>JavaScript &middot; 2 stars</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
     <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
-    <sub>Kotlin</sub>
+    <sub>Kotlin &middot; 1 star</sub>
   </td>
 </tr>
 <tr>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
     <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
-    <sub>Python</sub>
+    <sub>Python &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/elephant"><b>elephant</b></a><br/>
     <sub>No description yet.</sub><br/>
-    <sub>HTML</sub>
+    <sub>HTML &middot; 1 star</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-11 17:42 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-12 04:09 UTC.</sub></p>
