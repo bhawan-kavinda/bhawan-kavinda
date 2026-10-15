@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**17** repositories (**9** public, **8** private). Most used: Kotlin, JavaScript, HTML.
+**18** repositories (**11** public, **7** private). Most used: Kotlin, JavaScript, HTML.
 
 ---
 
@@ -55,7 +55,7 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 3 stars</sub>
+    <sub>JavaScript &middot; 4 stars</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
@@ -70,13 +70,13 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>Python &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/AWV-Browser"><b>AWV-Browser</b></a><br/>
-    <sub>No description yet.</sub><br/>
-    <sub>Kotlin</sub>
+    <a href="https://github.com/bhawan-kavinda/dws-site"><b>dws-site</b></a><br/>
+    <sub>Dev With Spoon! 🦊</sub><br/>
+    <sub>HTML</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-15 04:49 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-15 17:07 UTC.</sub></p>
