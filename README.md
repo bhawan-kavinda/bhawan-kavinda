@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**19** repositories (**11** public, **8** private). Most used: Kotlin, JavaScript, HTML.
+**19** repositories (**12** public, **7** private). Most used: Kotlin, JavaScript, HTML.
 
 ---
 
@@ -70,13 +70,13 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>Python &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/dws-site"><b>dws-site</b></a><br/>
-    <sub>Dev With Spoon! 🦊</sub><br/>
-    <sub>HTML</sub>
+    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
+    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
+    <sub>HTML &middot; 1 star</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-17 04:36 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-17 15:41 UTC.</sub></p>
