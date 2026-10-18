@@ -179,7 +179,25 @@ const BG_DEFS = `<defs>
   <linearGradient id="ln" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3f74d6"/><stop offset="0.5" stop-color="#ff8a1f"/><stop offset="1" stop-color="#3DDC84"/></linearGradient>
 </defs>`;
 
-export function headerSvg({ headline, name, roles }) {
+// Official GitHub Copilot mark (Octicons "copilot-24", MIT licensed).
+const COPILOT_PATH = 'M23.922 16.992c-.861 1.495-5.859 5.023-11.922 5.023S.939 18.487.078 16.992A.6.6 0 0 1 0 16.736v-2.869a.8.8 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10 10 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952 1.399-1.136 3.392-2.093 6.122-2.093s4.767.957 6.166 2.093c.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.8.8 0 0 1 .053.22v2.869a.6.6 0 0 1-.078.256M12.172 11h-.344a4 4 0 0 1-.355.508C10.703 12.455 9.555 13 7.965 13c-1.725 0-2.989-.359-3.782-1.259a2 2 0 0 1-.085-.104L4 11.741v6.585c1.435.779 4.514 2.179 8 2.179s6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4 4 0 0 1-.355-.508h-.016zm.641-2.935c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021q0 .397.063.893m-1.626 0q.063-.496.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497M14.5 14.25a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1m-5 0a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1';
+
+// Profile picture as a data URI (an SVG shown through <img> cannot load external images).
+// Uses the live GitHub avatar, so it follows profile picture changes; falls back to assets/logo.jpg.
+export async function fetchAvatar(login, root = process.cwd()) {
+  try {
+    const res = await fetch(`https://github.com/${encodeURIComponent(login)}.png?size=240`, { headers: { 'User-Agent': 'profile-generator' } });
+    if (res.ok) {
+      const type = (res.headers.get('content-type') || 'image/png').split(';')[0];
+      if (type.startsWith('image/')) return `data:${type};base64,${Buffer.from(await res.arrayBuffer()).toString('base64')}`;
+    }
+  } catch { /* fall through to local file */ }
+  try {
+    return `data:image/jpeg;base64,${fs.readFileSync(path.join(root, 'assets', 'logo.jpg')).toString('base64')}`;
+  } catch { return null; }
+}
+
+export function headerSvg({ headline, name, roles, avatar = null }) {
   const n = roles.length;
   const D = 3, T = n * D, vis = 100 / n;
   const animated = n > 1;
@@ -204,8 +222,15 @@ ${BG_DEFS}
 ${css}
 <rect width="900" height="260" rx="20" fill="url(#bg)"/>
 ${stars}
-<g fill="none" stroke="url(#ln)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M92 95 L52 130 L92 165"/><path d="M148 95 L188 130 L148 165"/><path d="M132 87 L108 173"/>
+${avatar
+    ? `<clipPath id="av"><circle cx="118" cy="126" r="62"/></clipPath>
+<image href="${avatar}" x="56" y="64" width="124" height="124" preserveAspectRatio="xMidYMid slice" clip-path="url(#av)"/>`
+    : `<circle cx="118" cy="126" r="62" fill="#151b28"/>
+<text x="118" y="141" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">${esc(name.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase())}</text>`}
+<circle cx="118" cy="126" r="65" fill="none" stroke="url(#ln)" stroke-width="4"/>
+<g>
+  <circle cx="184" cy="184" r="29" fill="#0f1115" stroke="url(#ln)" stroke-width="3.5"/>
+  <path transform="translate(167 167) scale(1.4167)" fill="#ffffff" d="${COPILOT_PATH}"/>
 </g>
 <text x="242" y="84" font-size="14" font-weight="700" letter-spacing="3" fill="#ff8a1f">${esc(headline.toUpperCase())}</text>
 <text x="240" y="140" font-size="48" font-weight="700" fill="#ffffff">${esc(name)}</text>
@@ -331,7 +356,7 @@ export async function main() {
 
   const outDir = path.join(root, 'assets', 'generated');
   fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, 'header.svg'), headerSvg({ headline: cfg.headline, name: cfg.name || login, roles: cfg.roles?.length ? cfg.roles : ['Developer'] }));
+  fs.writeFileSync(path.join(outDir, 'header.svg'), headerSvg({ headline: cfg.headline, name: cfg.name || login, roles: cfg.roles?.length ? cfg.roles : ['Developer'], avatar: await fetchAvatar(login, root) }));
   fs.writeFileSync(path.join(outDir, 'stats.svg'), statsSvg(tiles, updated));
   fs.writeFileSync(path.join(outDir, 'languages.svg'), languagesSvg(shares));
 

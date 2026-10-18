@@ -60,23 +60,23 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
     <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
-    <sub>Kotlin &middot; 1 star</sub>
+    <sub>Kotlin &middot; 2 stars</sub>
   </td>
 </tr>
 <tr>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
-    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
-    <sub>Python &middot; 1 star</sub>
+    <a href="https://github.com/bhawan-kavinda/Colab-run"><b>Colab-run</b></a><br/>
+    <sub>Run openssh with server</sub><br/>
+    <sub>Python &middot; 2 stars</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/PixelFox-wabot"><b>PixelFox-wabot</b></a><br/>
-    <sub>Whatsapp-Bot</sub><br/>
-    <sub>JavaScript &middot; 2 stars</sub>
+    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
+    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
+    <sub>HTML &middot; 2 stars</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-18 04:41 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-18 11:01 UTC.</sub></p>
