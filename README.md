@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**21** repositories (**13** public, **8** private). Most used: Kotlin, JavaScript, HTML.
+**21** repositories (**13** public, **8** private). Most used: Kotlin, JavaScript, Go.
 
 ---
 
@@ -55,7 +55,7 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 4 stars</sub>
+    <sub>JavaScript &middot; 5 stars</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
@@ -70,13 +70,13 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>Python &middot; 2 stars</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Colab-run"><b>Colab-run</b></a><br/>
-    <sub>Run openssh with server</sub><br/>
-    <sub>Python &middot; 2 stars</sub>
+    <a href="https://github.com/bhawan-kavinda/wacli"><b>wacli</b></a><br/>
+    <sub>♎ Wacli whatsapp cli tool</sub><br/>
+    <sub>Go &middot; 2 stars</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-19 04:50 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-19 18:44 UTC.</sub></p>
