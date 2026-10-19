@@ -26,7 +26,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**20** repositories (**12** public, **8** private). Most used: Kotlin, JavaScript, HTML.
+**21** repositories (**13** public, **8** private). Most used: Kotlin, JavaScript, HTML.
 
 ---
 
@@ -65,18 +65,18 @@ Solo developer from Sri Lanka building web and mobile products.
 </tr>
 <tr>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Colab-run"><b>Colab-run</b></a><br/>
-    <sub>Run openssh with server</sub><br/>
+    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
+    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
     <sub>Python &middot; 2 stars</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
-    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
-    <sub>HTML &middot; 2 stars</sub>
+    <a href="https://github.com/bhawan-kavinda/Colab-run"><b>Colab-run</b></a><br/>
+    <sub>Run openssh with server</sub><br/>
+    <sub>Python &middot; 2 stars</sub>
   </td>
 </tr>
 </table>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-18 15:56 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-19 04:50 UTC.</sub></p>
