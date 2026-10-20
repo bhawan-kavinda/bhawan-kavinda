@@ -71,7 +71,7 @@ Solo developer from Sri Lanka building web and mobile products.
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/wacli"><b>wacli</b></a><br/>
-    <sub>♎ Wacli whatsapp cli tool</sub><br/>
+    <sub>♎ Wacli whatsapp cli tool || Whatsapp from your terminal</sub><br/>
     <sub>Go &middot; 2 stars</sub>
   </td>
 </tr>
@@ -79,4 +79,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-19 18:44 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-20 04:58 UTC.</sub></p>
