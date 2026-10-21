@@ -15,11 +15,55 @@
     "Goal: continuous learning and contributing to open source."
   ],
   "links": {
-    "linkedin": "https://www.linkedin.com/in/bhawan-kavinda-77a29342b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    "linkedin": "https://www.linkedin.com/in/bhawan-kavinda-77a29342b",
     "email": "kavindabhawan@proton.me",
-    "portfolio": "",
+    "x": "https://x.com/BhKavinda",
+    "reddit": "https://www.reddit.com/u/Bkavinda_2006/s/5lLhhZyKdB",
+    "discord": "https://discord.gg/htW6HVSt",
+    "portfolio": "https://b-kavinda.is-a.dev/",
     "spotify": ""
   },
-  "featured": { "count": 4, "pin": [], "exclude": [] },
-  "languages": { "top": 6, "exclude": [] }
+  "techStack": [
+    {
+      "title": "Languages",
+      "items": [
+        "Kotlin",
+        "JavaScript",
+        "Go",
+        "Python",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Frameworks and Platforms",
+      "items": [
+        "React",
+        { "name": "Capacitor", "logo": "capacitor" },
+        "Android",
+        "Cloudflare Workers"
+      ]
+    },
+    {
+      "title": "DevOps",
+      "items": [
+        "GitHub Actions",
+        "GitLab",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "Vim"
+      ]
+    }
+  ],
+  "featured": {
+    "count": 4,
+    "pin": [],
+    "exclude": []
+  }
 }
