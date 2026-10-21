@@ -33,32 +33,23 @@
       ]
     },
     {
-      "title": "Mobile and Web",
+      "title": "Frameworks and Platforms",
       "items": [
         "Android",
-        "Jetpack Compose",
-        "Capacitor",
-        "Node.js"
+        "Node.js",
+        "Cloudflare Workers"
       ]
     },
     {
-      "title": "Cloud and DevOps",
-      "items": [
-        "Cloudflare Workers",
-        "GitHub Actions",
-        "GitLab",
-        "Docker",
-        "Linux"
-      ]
-    },
-    {
-      "title": "Tools",
+      "title": "DevOps and Tools",
       "items": [
         "Git",
         "GitHub",
+        "GitHub Actions",
+        "GitLab",
+        "Docker",
+        "Linux",
         "VS Code",
-        "Android Studio",
-        "Postman",
         "Figma"
       ]
     }
