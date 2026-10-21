@@ -314,6 +314,42 @@ export function renderFeatured(list) {
   return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
+export const TECH_ICONS = {
+  kotlin: ['kotlin', '7F52FF'], 'jetpack compose': ['jetpackcompose', '4285F4'], android: ['android', '3DDC84'],
+  javascript: ['javascript', 'F7DF1E', 'black'], typescript: ['typescript', '3178C6'], go: ['go', '00ADD8'],
+  python: ['python', '3776AB'], java: ['openjdk', 'ED8B00'], html: ['html5', 'E34F26'], css: ['css3', '1572B6'],
+  react: ['react', '20232A', '61DAFB'], 'node.js': ['nodedotjs', '339933'], nodejs: ['nodedotjs', '339933'],
+  capacitor: ['capacitor', '119EFF'], flutter: ['flutter', '02569B'], dart: ['dart', '0175C2'],
+  'tailwind css': ['tailwindcss', '06B6D4'], 'cloudflare workers': ['cloudflare', 'F38020'],
+  firebase: ['firebase', 'FFCA28', 'black'], mongodb: ['mongodb', '47A248'], postgresql: ['postgresql', '4169E1'],
+  mysql: ['mysql', '4479A1'], sqlite: ['sqlite', '003B57'], docker: ['docker', '2496ED'], linux: ['linux', 'FCC624', 'black'],
+  git: ['git', 'F05032'], github: ['github', '181717'], 'github actions': ['githubactions', '2088FF'],
+  gitlab: ['gitlab', 'FC6D26'], 'vs code': ['visualstudiocode', '007ACC'], 'android studio': ['androidstudio', '3DDC84'],
+  figma: ['figma', 'F24E1E'], postman: ['postman', 'FF6C37'], vercel: ['vercel', '000000'], npm: ['npm', 'CB3837'],
+};
+
+const badgeText = (s) => encodeURIComponent(String(s).replace(/-/g, '--').replace(/_/g, '__'));
+
+export function techBadge(item) {
+  const it = typeof item === 'string' ? { name: item } : item;
+  const known = TECH_ICONS[String(it.name).toLowerCase()] || [];
+  const slug = it.slug || known[0];
+  const color = (it.color || known[1] || '3f74d6').replace('#', '');
+  const logoColor = it.logoColor || known[2] || 'white';
+  const url = `https://img.shields.io/badge/${badgeText(it.name)}-${color}?style=flat-square${slug ? `&logo=${encodeURIComponent(slug)}&logoColor=${logoColor}` : ''}`;
+  return `<img src="${url}" alt="${esc(it.name)}">`;
+}
+
+export function renderTechStack(groups) {
+  const rows = (groups || []).filter((g) => g && g.title && (g.items || []).length);
+  if (!rows.length) return '<sub>Coming soon.</sub>';
+  const tr = rows.map((g) => `<tr>
+  <td width="170" valign="middle"><b>${esc(g.title)}</b></td>
+  <td valign="middle">${g.items.map(techBadge).join(' ')}</td>
+</tr>`);
+  return `<table>\n${tr.join('\n')}\n</table>`;
+}
+
 export function renderTemplate(tpl, vars, links) {
   let out = tpl.replace(/<!--IF:(\w+)-->([\s\S]*?)<!--\/IF:\1-->/g, (_, key, body) => (isSet(links[key]) ? body : ''));
   out = out.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : (isSet(links[k]) ? links[k] : m)));
@@ -373,6 +409,7 @@ export async function main() {
     overview: (cfg.overview || []).map((l) => `- ${l}`).join('\n'),
     auto_line: autoLine,
     topics: topics.length ? topics.map((t) => `\`${t}\``).join(' ') : '',
+    tech_stack: renderTechStack(cfg.techStack),
     featured: renderFeatured(pickFeatured(repos, cfg.featured, login)),
     updated,
   };

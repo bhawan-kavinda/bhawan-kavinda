@@ -20,6 +20,56 @@
     "portfolio": "",
     "spotify": ""
   },
-  "featured": { "count": 4, "pin": [], "exclude": [] },
-  "languages": { "top": 6, "exclude": [] }
+  "techStack": [
+    {
+      "title": "Languages",
+      "items": [
+        "Kotlin",
+        "JavaScript",
+        "Go",
+        "Python",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Mobile and Web",
+      "items": [
+        "Android",
+        "Jetpack Compose",
+        "Capacitor",
+        "Node.js"
+      ]
+    },
+    {
+      "title": "Cloud and DevOps",
+      "items": [
+        "Cloudflare Workers",
+        "GitHub Actions",
+        "GitLab",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Android Studio",
+        "Postman",
+        "Figma"
+      ]
+    }
+  ],
+  "featured": {
+    "count": 4,
+    "pin": [],
+    "exclude": []
+  },
+  "languages": {
+    "top": 6,
+    "exclude": []
+  }
 }

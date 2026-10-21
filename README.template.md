@@ -47,6 +47,12 @@
 
 ---
 
+### Tech stack and tools
+
+{{tech_stack}}
+
+---
+
 ### Featured projects
 
 {{featured}}
