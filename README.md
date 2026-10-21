@@ -113,9 +113,9 @@ Solo developer from Sri Lanka building web and mobile products.
   &nbsp;&nbsp;
   <a href="https://www.reddit.com/u/Bkavinda_2006/s/5lLhhZyKdB"><img src="assets/generated/social-reddit.svg" width="48" height="48" alt="Reddit"></a>
   &nbsp;&nbsp;
-  <a href="https://discord.gg/htW6HVSt"><img src="assets/generated/social-discord.svg" width="48" height="48" alt="Discord"></a>
+  <a href="https://discord.gg/crxmRGmn"><img src="assets/generated/social-discord.svg" width="48" height="48" alt="Discord"></a>
 </p>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-21 04:15 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-21 08:42 UTC.</sub></p>
