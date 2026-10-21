@@ -10,13 +10,6 @@
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/{{username}}"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <!--IF:linkedin--><a href="https://linkedin.com/in/{{linkedin}}"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a><!--/IF:linkedin-->
-  <!--IF:email--><a href="mailto:{{email}}"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a><!--/IF:email-->
-  <!--IF:portfolio--><a href="{{portfolio}}"><img src="https://img.shields.io/badge/Portfolio-10B981?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio"></a><!--/IF:portfolio-->
-</p>
-
 ---
 
 ### Overview
@@ -71,4 +64,10 @@
 ---
 
 <!--/IF:spotify-->
+### Connect with me
+
+{{socials}}
+
+---
+
 <p align="center"><sub>Generated from repository data by GitHub Actions. Last updated {{updated}} UTC.</sub></p>

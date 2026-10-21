@@ -10,12 +10,6 @@
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/bhawan-kavinda"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://linkedin.com/in/https://www.linkedin.com/in/bhawan-kavinda-77a29342b?utm_source=share_via&utm_content=profile&utm_medium=member_android"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:kavindabhawan@proton.me"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-</p>
-
 ---
 
 ### Overview
@@ -60,9 +54,14 @@ Solo developer from Sri Lanka building web and mobile products.
   <img src="https://skillicons.dev/icons?i=androidstudio,nodejs,cloudflare&perline=3" alt="Frameworks and Platforms">
 </p>
 
-<p align="center"><b>DevOps and Tools</b></p>
+<p align="center"><b>DevOps</b></p>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,gitlab,docker,linux,vscode,figma&perline=8" alt="DevOps and Tools">
+  <img src="https://skillicons.dev/icons?i=githubactions,gitlab,docker,linux&perline=4" alt="DevOps">
+</p>
+
+<p align="center"><b>Tools</b></p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma&perline=4" alt="Tools">
 </p>
 
 ---
@@ -95,6 +94,24 @@ Solo developer from Sri Lanka building web and mobile products.
   </td>
 </tr>
 </table>
+
+---
+
+### Connect with me
+
+<p align="center">
+  <a href="https://github.com/bhawan-kavinda"><img src="assets/generated/social-github.svg" width="48" height="48" alt="GitHub"></a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/bhawan-kavinda-77a29342b"><img src="assets/generated/social-linkedin.svg" width="48" height="48" alt="LinkedIn"></a>
+  &nbsp;&nbsp;
+  <a href="mailto:kavindabhawan@proton.me"><img src="assets/generated/social-email.svg" width="48" height="48" alt="Email"></a>
+  &nbsp;&nbsp;
+  <a href="https://x.com/YOUR_X_USERNAME"><img src="assets/generated/social-x.svg" width="48" height="48" alt="X"></a>
+  &nbsp;&nbsp;
+  <a href="https://www.reddit.com/user/YOUR_REDDIT_USERNAME"><img src="assets/generated/social-reddit.svg" width="48" height="48" alt="Reddit"></a>
+  &nbsp;&nbsp;
+  <a href="https://discord.com/users/YOUR_DISCORD_ID"><img src="assets/generated/social-discord.svg" width="48" height="48" alt="Discord"></a>
+</p>
 
 ---
 

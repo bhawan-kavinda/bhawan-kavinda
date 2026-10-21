@@ -350,6 +350,60 @@ export function renderTechStack(groups) {
   }).filter(Boolean).join('\n\n');
 }
 
+/* ---------- social icons (round) ---------- */
+
+// Icon paths come from the simple-icons package at run time (viewBox 0 0 24 24).
+// LinkedIn was removed from newer simple-icons releases, so it is pinned to an older one.
+export const SOCIALS = [
+  { key: 'github', label: 'GitHub', color: '#24292f', slug: 'github' },
+  { key: 'linkedin', label: 'LinkedIn', color: '#0A66C2', slug: 'linkedin', ver: '9.21.0' },
+  { key: 'email', label: 'Email', color: '#D14836', glyph: 'mail' },
+  { key: 'x', label: 'X', color: '#000000', slug: 'x' },
+  { key: 'reddit', label: 'Reddit', color: '#FF4500', slug: 'reddit' },
+  { key: 'discord', label: 'Discord', color: '#5865F2', slug: 'discord' },
+];
+
+export async function fetchIconPath(slug, ver = 'latest') {
+  try {
+    const res = await fetch(`https://cdn.jsdelivr.net/npm/simple-icons@${ver}/icons/${slug}.svg`, { headers: { 'User-Agent': 'profile-generator' } });
+    if (!res.ok) return null;
+    const m = (await res.text()).match(/<path[^>]*\sd="([^"]+)"/);
+    return m ? m[1] : null;
+  } catch { return null; }
+}
+
+export function socialSvg(s, pathD) {
+  let glyph;
+  if (s.glyph === 'mail') {
+    glyph = `<rect x="17" y="22" width="30" height="21" rx="3.5" fill="none" stroke="#fff" stroke-width="2.6"/>
+<path d="M18.5 25l13.5 9.5L45.5 25" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+  } else if (pathD) {
+    glyph = `<path transform="translate(17.6 17.6) scale(1.2)" fill="#fff" d="${pathD}"/>`;
+  } else {
+    glyph = `<text x="32" y="41" font-size="26" font-weight="700" fill="#fff" text-anchor="middle" font-family="${FONT}">${esc(s.label[0])}</text>`;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+<title id="t">${esc(s.label)}</title>
+<circle cx="32" cy="32" r="30" fill="${s.color}"/>
+<circle cx="32" cy="32" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+${glyph}
+</svg>`;
+}
+
+export function socialUrl(key, links, login) {
+  if (key === 'github') return `https://github.com/${login}`;
+  const v = links[key];
+  if (!isSet(v)) return null;
+  if (key === 'email') return v.startsWith('mailto:') ? v : `mailto:${v}`;
+  return v;
+}
+
+export function renderSocials(items) {
+  if (!items.length) return '';
+  const cells = items.map((i) => `<a href="${esc(i.url)}"><img src="assets/generated/social-${i.key}.svg" width="48" height="48" alt="${esc(i.label)}"></a>`);
+  return `<p align="center">\n  ${cells.join('\n  &nbsp;&nbsp;\n  ')}\n</p>`;
+}
+
 export function renderTemplate(tpl, vars, links) {
   let out = tpl.replace(/<!--IF:(\w+)-->([\s\S]*?)<!--\/IF:\1-->/g, (_, key, body) => (isSet(links[key]) ? body : ''));
   out = out.replace(/\{\{(\w+)\}\}/g, (m, k) => (k in vars ? vars[k] : (isSet(links[k]) ? links[k] : m)));
@@ -396,6 +450,13 @@ export async function main() {
   fs.writeFileSync(path.join(outDir, 'stats.svg'), statsSvg(tiles, updated));
   fs.writeFileSync(path.join(outDir, 'languages.svg'), languagesSvg(shares));
 
+  const socials = SOCIALS.map((x) => ({ ...x, url: socialUrl(x.key, cfg.links || {}, login) })).filter((x) => x.url);
+  for (const x of socials) {
+    const d = x.slug ? await fetchIconPath(x.slug, x.ver) : null;
+    if (x.slug && !d) console.warn(`Could not load icon for ${x.label}; using a letter instead.`);
+    fs.writeFileSync(path.join(outDir, `social-${x.key}.svg`), socialSvg(x, d));
+  }
+
   const topLangs = shares.filter((s) => s.name !== 'Other').slice(0, 3).map((s) => s.name);
   const total = rs.publicCount + (rs.privateCount || 0);
   const autoLine = `**${total}** repositories (**${rs.publicCount}** public${rs.privateCount === null ? '' : `, **${rs.privateCount}** private`}).` +
@@ -410,6 +471,7 @@ export async function main() {
     auto_line: autoLine,
     topics: topics.length ? topics.map((t) => `\`${t}\``).join(' ') : '',
     tech_stack: renderTechStack(cfg.techStack),
+    socials: renderSocials(socials),
     featured: renderFeatured(pickFeatured(repos, cfg.featured, login)),
     updated,
   };

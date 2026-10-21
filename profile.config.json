@@ -15,8 +15,11 @@
     "Goal: continuous learning and contributing to open source."
   ],
   "links": {
-    "linkedin": "https://www.linkedin.com/in/bhawan-kavinda-77a29342b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    "linkedin": "https://www.linkedin.com/in/bhawan-kavinda-77a29342b",
     "email": "kavindabhawan@proton.me",
+    "x": "https://x.com/YOUR_X_USERNAME",
+    "reddit": "https://www.reddit.com/user/YOUR_REDDIT_USERNAME",
+    "discord": "https://discord.com/users/YOUR_DISCORD_ID",
     "portfolio": "",
     "spotify": ""
   },
@@ -41,14 +44,19 @@
       ]
     },
     {
-      "title": "DevOps and Tools",
+      "title": "DevOps",
       "items": [
-        "Git",
-        "GitHub",
         "GitHub Actions",
         "GitLab",
         "Docker",
-        "Linux",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
         "VS Code",
         "Figma"
       ]
