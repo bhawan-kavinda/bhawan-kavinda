@@ -88,9 +88,9 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>Python &middot; 2 stars</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/wacli"><b>wacli</b></a><br/>
-    <sub>♎ Wacli whatsapp cli tool || Whatsapp from your terminal</sub><br/>
-    <sub>Go &middot; 2 stars</sub>
+    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
+    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
+    <sub>HTML &middot; 2 stars</sub>
   </td>
 </tr>
 </table>
@@ -106,13 +106,13 @@ Solo developer from Sri Lanka building web and mobile products.
   &nbsp;&nbsp;
   <a href="mailto:kavindabhawan@proton.me"><img src="assets/generated/social-email.svg" width="48" height="48" alt="Email"></a>
   &nbsp;&nbsp;
-  <a href="https://x.com/YOUR_X_USERNAME"><img src="assets/generated/social-x.svg" width="48" height="48" alt="X"></a>
+  <a href="https://x.com/BhKavinda"><img src="assets/generated/social-x.svg" width="48" height="48" alt="X"></a>
   &nbsp;&nbsp;
-  <a href="https://www.reddit.com/user/YOUR_REDDIT_USERNAME"><img src="assets/generated/social-reddit.svg" width="48" height="48" alt="Reddit"></a>
+  <a href="https://www.reddit.com/u/Bkavinda_2006/s/5lLhhZyKdB"><img src="assets/generated/social-reddit.svg" width="48" height="48" alt="Reddit"></a>
   &nbsp;&nbsp;
-  <a href="https://discord.com/users/YOUR_DISCORD_ID"><img src="assets/generated/social-discord.svg" width="48" height="48" alt="Discord"></a>
+  <a href="https://discord.gg/htW6HVSt"><img src="assets/generated/social-discord.svg" width="48" height="48" alt="Discord"></a>
 </p>
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-21 03:26 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-21 03:35 UTC.</sub></p>
