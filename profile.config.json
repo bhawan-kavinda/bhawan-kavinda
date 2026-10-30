@@ -23,44 +23,6 @@
     "portfolio": "https://b-kavinda.is-a.dev/",
     "spotify": ""
   },
-  "techStack": [
-    {
-      "title": "Languages",
-      "items": [
-        "Kotlin",
-        "JavaScript",
-        "Go",
-        "Python",
-        "HTML",
-        "CSS"
-      ]
-    },
-    {
-      "title": "Frameworks and Platforms",
-      "items": [
-        "React",
-        { "name": "Capacitor", "logo": "capacitor" },
-        "Android",
-        "Cloudflare Workers"
-      ]
-    },
-    {
-      "title": "DevOps",
-      "items": [
-        "GitHub Actions",
-        "GitLab",
-        "Linux"
-      ]
-    },
-    {
-      "title": "Tools",
-      "items": [
-        "Git",
-        "GitHub",
-        "Vim"
-      ]
-    }
-  ],
   "featured": {
     "count": 4,
     "pin": [],
