@@ -20,7 +20,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**25** repositories (**11** public, **14** private). Most used: Kotlin, JavaScript, Go.
+**20** repositories (**11** public, **9** private). Most used: JavaScript, Kotlin, Go.
 
 ---
 
@@ -44,28 +44,7 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ### Tech stack and tools
 
-<p align="center"><b>Languages</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=kotlin,js,go,py,html,css&perline=6" alt="Languages">
-</p>
-
-<p align="center"><b>Frameworks and Platforms</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,androidstudio,cloudflare&perline=3" alt="Frameworks and Platforms">
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Capacitor-1f2937?style=for-the-badge&logo=capacitor&logoColor=white" alt="Capacitor">
-</p>
-
-<p align="center"><b>DevOps</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=githubactions,gitlab,linux&perline=3" alt="DevOps">
-</p>
-
-<p align="center"><b>Tools</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vim&perline=3" alt="Tools">
-</p>
+<sub>Coming soon.</sub>
 
 ---
 
@@ -76,23 +55,23 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 5 stars</sub>
+    <sub>JavaScript &middot; 6 stars</sub>
   </td>
-  <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/SysStatus"><b>SysStatus</b></a><br/>
-    <sub>Live battery, RAM and CPU stats for Android with a floating window. No root, no internet permission, no ads, no trackers. Open source, built with Kotlin and Jetpack Compose.</sub><br/>
-    <sub>Kotlin &middot; 2 stars</sub>
-  </td>
-</tr>
-<tr>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
     <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
     <sub>Python &middot; 2 stars</sub>
   </td>
+</tr>
+<tr>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
     <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
+    <sub>HTML &middot; 2 stars</sub>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://github.com/bhawan-kavinda/DWS"><b>DWS</b></a><br/>
+    <sub>Dev With Spoon! 🦊</sub><br/>
     <sub>HTML &middot; 2 stars</sub>
   </td>
 </tr>
@@ -118,4 +97,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-24 16:02 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-10-30 10:18 UTC.</sub></p>
