@@ -1,0 +1,69 @@
+{
+  "username": "bhawan-kavinda",
+  "name": "Bhawan Kavinda",
+  "headline": "Welcome To My Universe",
+  "roles": [
+    "Full Stack Developer",
+    "Creative Problem Solver",
+    "Tech & Cloud Enthusiast",
+    "Building Awesome Projects"
+  ],
+  "bio": "Solo developer from Sri Lanka building web and mobile products.",
+  "overview": [
+    "Exploring new technologies and building cool software.",
+    "Focused on scalable web apps, clean code, and modern design.",
+    "Goal: continuous learning and contributing to open source."
+  ],
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/bhawan-kavinda-77a29342b",
+    "email": "kavindabhawan@proton.me",
+    "x": "https://x.com/BhKavinda",
+    "reddit": "https://www.reddit.com/u/Bkavinda_2006/s/5lLhhZyKdB",
+    "discord": "https://discord.gg/crxmRGmn",
+    "portfolio": "https://b-kavinda.is-a.dev/",
+    "spotify": ""
+  },
+  "techStack": [
+    {
+      "title": "Languages",
+      "items": [
+        "Kotlin",
+        "JavaScript",
+        "Go",
+        "Python",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Frameworks and Platforms",
+      "items": [
+        "React",
+        { "name": "Capacitor", "logo": "capacitor" },
+        "Android",
+        "Cloudflare Workers"
+      ]
+    },
+    {
+      "title": "DevOps",
+      "items": [
+        "GitHub Actions",
+        "GitLab",
+        "Linux"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "Vim"
+      ]
+    }
+  ],
+  "featured": {
+    "count": 4,
+    "pin": [],
+    "exclude": []
+  }
+}
