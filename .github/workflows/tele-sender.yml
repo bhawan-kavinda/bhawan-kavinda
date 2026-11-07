@@ -1,0 +1,203 @@
+name: Send Build Result to Telegram
+
+on:
+  workflow_run:
+    # EDIT THIS ONLY: set to the "name:" value of your build workflow
+    workflows: ["Update profile"]
+    types:
+      - completed
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    # No "if" condition: runs on success, failure and cancelled
+    steps:
+      - name: Report build result to Telegram
+        uses: actions/github-script@v7
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TIME_ZONE: Asia/Colombo
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execSync } = require('child_process');
+
+            const run = context.payload.workflow_run;
+            const { owner, repo } = context.repo;
+            const api = `https://api.telegram.org/bot${process.env.TG_TOKEN}`;
+            const chat = process.env.TG_CHAT;
+            const MAX_UPLOAD = 49 * 1024 * 1024;
+
+            const esc = (s) => String(s)
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;');
+
+            // ---- Run info ----
+            const started = new Date(run.run_started_at || run.created_at);
+            const ended = new Date(run.updated_at);
+            const secs = Math.max(0, Math.round((ended - started) / 1000));
+            const duration = `${Math.floor(secs / 60)}m ${secs % 60}s`;
+            const when = started.toLocaleString('en-GB', {
+              timeZone: process.env.TIME_ZONE,
+              dateStyle: 'medium',
+              timeStyle: 'medium',
+            });
+            const conclusion = (run.conclusion || 'unknown').toUpperCase();
+
+            const header = [
+              `<b>${esc(owner)}/${esc(repo)}</b>`,
+              `Workflow: ${esc(run.name)} #${run.run_number}`,
+              `Status: <b>${conclusion}</b>`,
+              `Date: ${esc(when)} (${esc(process.env.TIME_ZONE)})`,
+              `Duration: ${duration}`,
+              `Branch: ${esc(run.head_branch || '-')}`,
+              `<a href="${run.html_url}">Open run</a>`,
+            ].join('\n');
+
+            // ---- Telegram helpers ----
+            async function tgCheck(res) {
+              const json = await res.json();
+              if (!json.ok) throw new Error(`Telegram error: ${JSON.stringify(json)}`);
+              return json;
+            }
+
+            async function sendMessage(text) {
+              await tgCheck(await fetch(`${api}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  chat_id: chat,
+                  text,
+                  parse_mode: 'HTML',
+                  disable_web_page_preview: true,
+                }),
+              }));
+            }
+
+            async function sendDocument(filePath, caption) {
+              const form = new FormData();
+              form.append('chat_id', chat);
+              form.append('caption', caption);
+              form.append('parse_mode', 'HTML');
+              form.append('document', new Blob([fs.readFileSync(filePath)]), path.basename(filePath));
+              await tgCheck(await fetch(`${api}/sendDocument`, { method: 'POST', body: form }));
+            }
+
+            // Keep the last lines of a list that fit in the char budget
+            function fitTail(lines, budget) {
+              const out = [];
+              let size = 0;
+              for (let i = lines.length - 1; i >= 0; i--) {
+                const line = esc(lines[i]);
+                if (size + line.length + 1 > budget) break;
+                out.unshift(line);
+                size += line.length + 1;
+              }
+              return out.join('\n');
+            }
+
+            // ---- FAILED / CANCELLED: send error output ----
+            if (run.conclusion !== 'success') {
+              const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {
+                owner, repo, run_id: run.id, per_page: 100,
+              });
+              const failedJobs = jobs.filter((j) => j.conclusion === 'failure');
+              const parts = [header];
+
+              for (const job of failedJobs.slice(0, 2)) {
+                const failedSteps = (job.steps || [])
+                  .filter((s) => s.conclusion === 'failure')
+                  .map((s) => s.name);
+                let block = `\n<b>Failed job:</b> ${esc(job.name)}`;
+                if (failedSteps.length) block += `\n<b>Failed step:</b> ${esc(failedSteps.join(', '))}`;
+
+                try {
+                  const res = await github.rest.actions.downloadJobLogsForWorkflowRun({
+                    owner, repo, job_id: job.id,
+                  });
+                  const lines = String(res.data)
+                    .split('\n')
+                    .map((l) => l
+                      .replace(/\x1b\[[0-9;]*m/g, '')
+                      .replace(/^\d{4}-\d\d-\d\dT[\d:.]+Z\s?/, '')
+                      .trimEnd())
+                    .filter((l) => l.length > 0);
+
+                  let last = -1;
+                  lines.forEach((l, i) => { if (l.includes('##[error]')) last = i; });
+                  if (last === -1) last = lines.length - 1;
+                  const snippet = lines.slice(Math.max(0, last - 30), last + 1);
+
+                  block += `\n<pre>${fitTail(snippet, 1400)}</pre>`;
+                } catch (e) {
+                  block += `\n(Could not fetch logs: ${esc(e.message)})`;
+                }
+                parts.push(block);
+              }
+
+              if (!failedJobs.length) {
+                parts.push('\nNo failed job found (run may have been cancelled or timed out).');
+              }
+              await sendMessage(parts.join('\n').slice(0, 4000));
+              return;
+            }
+
+            // ---- SUCCESS: send APK (or other output) ----
+            const artifacts = (await github.paginate(github.rest.actions.listWorkflowRunArtifacts, {
+              owner, repo, run_id: run.id, per_page: 100,
+            })).filter((a) => !a.expired);
+
+            if (!artifacts.length) {
+              await sendMessage(`${header}\n\nBuild passed. No artifacts were produced.`);
+              return;
+            }
+
+            const apks = [];
+            const otherNames = [];
+            for (const art of artifacts) {
+              const dl = await github.rest.actions.downloadArtifact({
+                owner, repo, artifact_id: art.id, archive_format: 'zip',
+              });
+              const zipPath = path.join(process.env.RUNNER_TEMP, `${art.id}.zip`);
+              const outDir = path.join(process.env.RUNNER_TEMP, `artifact_${art.id}`);
+              fs.writeFileSync(zipPath, Buffer.from(dl.data));
+              fs.mkdirSync(outDir, { recursive: true });
+              execSync(`unzip -o -q "${zipPath}" -d "${outDir}"`);
+
+              const found = execSync(`find "${outDir}" -type f -name "*.apk"`)
+                .toString().split('\n').filter(Boolean);
+              if (found.length) apks.push(...found);
+              else otherNames.push(art.name);
+            }
+
+            if (!apks.length) {
+              await sendMessage(
+                `${header}\n\nBuild passed. No APK found.\nArtifacts: ${esc(otherNames.join(', '))}`
+              );
+              return;
+            }
+
+            for (let i = 0; i < apks.length; i++) {
+              const file = apks[i];
+              const sizeBytes = fs.statSync(file).size;
+              const sizeMb = (sizeBytes / 1024 / 1024).toFixed(2);
+              const caption = [
+                header,
+                '',
+                `APK: ${esc(path.basename(file))}`,
+                `Size: ${sizeMb} MB`,
+              ].join('\n');
+
+              if (sizeBytes > MAX_UPLOAD) {
+                await sendMessage(`${caption}\n\nAPK is larger than the Telegram bot upload limit. Download it from the run page.`);
+              } else {
+                await sendDocument(file, caption.slice(0, 1024));
+              }
+            }
