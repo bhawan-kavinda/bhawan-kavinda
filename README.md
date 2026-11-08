@@ -55,24 +55,24 @@ Solo developer from Sri Lanka building web and mobile products.
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
     <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 7 stars</sub>
+    <sub>JavaScript &middot; 6 stars</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
     <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
-    <sub>Python &middot; 2 stars</sub>
+    <sub>Python &middot; 1 star</sub>
   </td>
 </tr>
 <tr>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
     <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
-    <sub>HTML &middot; 2 stars</sub>
+    <sub>HTML &middot; 1 star</sub>
   </td>
   <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/DWS"><b>DWS</b></a><br/>
     <sub>Dev With Spoon! 🦊</sub><br/>
-    <sub>HTML &middot; 2 stars</sub>
+    <sub>HTML &middot; 1 star</sub>
   </td>
 </tr>
 </table>
@@ -97,4 +97,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-08 06:13 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-08 17:57 UTC.</sub></p>
