@@ -20,7 +20,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**10** repositories (**7** public, **3** private). Most used: JavaScript, Python, HTML.
+**10** repositories (**8** public, **2** private). Most used: JavaScript, Python, HTML.
 
 ---
 
@@ -65,13 +65,13 @@ Solo developer from Sri Lanka building web and mobile products.
 </tr>
 <tr>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
-    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
-    <sub>HTML &middot; 1 star</sub>
+    <a href="https://github.com/bhawan-kavinda/Tgmovie"><b>Tgmovie</b></a><br/>
+    <sub>Tele Movie</sub><br/>
+    <sub>JavaScript</sub>
   </td>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/DWS"><b>DWS</b></a><br/>
-    <sub>Dev With Spoon! 🦊</sub><br/>
+    <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
+    <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
     <sub>HTML &middot; 1 star</sub>
   </td>
 </tr>
@@ -97,4 +97,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-15 06:44 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-15 18:55 UTC.</sub></p>
