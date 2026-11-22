@@ -20,7 +20,7 @@ Solo developer from Sri Lanka building web and mobile products.
 - Focused on scalable web apps, clean code, and modern design.
 - Goal: continuous learning and contributing to open source.
 
-**10** repositories (**7** public, **3** private). Most used: JavaScript, Python, HTML.
+**11** repositories (**8** public, **3** private). Most used: JavaScript, Python, HTML.
 
 ---
 
@@ -53,18 +53,6 @@ Solo developer from Sri Lanka building web and mobile products.
 <table>
 <tr>
   <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Web2APK"><b>Web2APK</b></a><br/>
-    <sub>Turn any website or web project into an Android APK using GitHub Actions. No Android Studio, no local setup. Copy one folder and push.</sub><br/>
-    <sub>JavaScript &middot; 6 stars</sub>
-  </td>
-  <td width="50%" valign="top">
-    <a href="https://github.com/bhawan-kavinda/Mirror-Repo"><b>Mirror-Repo</b></a><br/>
-    <sub>Automatic GitHub → GitLab mirroring. Push to GitHub, and the same commits, branches and tags land on GitLab seconds later. Zero servers, Python stdlib only.</sub><br/>
-    <sub>Python &middot; 1 star</sub>
-  </td>
-</tr>
-<tr>
-  <td width="50%" valign="top">
     <a href="https://github.com/bhawan-kavinda/portfolio"><b>portfolio</b></a><br/>
     <sub>A tiny 16-bit village walk game built with HTML, CSS and JavaScript, shown as a portfolio piece.</sub><br/>
     <sub>HTML &middot; 1 star</sub>
@@ -74,6 +62,14 @@ Solo developer from Sri Lanka building web and mobile products.
     <sub>Dev With Spoon! 🦊</sub><br/>
     <sub>HTML &middot; 1 star</sub>
   </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://github.com/bhawan-kavinda/Web2APK-template"><b>Web2APK-template</b></a><br/>
+    <sub>Web2APK template repo</sub><br/>
+    <sub>HTML</sub>
+  </td>
+  <td width="50%"></td>
 </tr>
 </table>
 
@@ -97,4 +93,4 @@ Solo developer from Sri Lanka building web and mobile products.
 
 ---
 
-<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-22 07:00 UTC.</sub></p>
+<p align="center"><sub>Generated from repository data by GitHub Actions. Last updated 2026-11-22 19:47 UTC.</sub></p>
